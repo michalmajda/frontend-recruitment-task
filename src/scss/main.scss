@@ -84,8 +84,8 @@
             left: 50%; 
             transform: translate(-50%, -50%);
             background-color: #FFFFFF;;
-            width: 50%;
-            height: 25%;
+            width: 100%;
+            height: 100%;
             padding-left: 5vw;
             padding-right: 5vw;
             opacity: 1;
@@ -124,12 +124,33 @@
                 line-height: 100%;
                 color: #FFFFFF;
             }
+            .loader{
+                display: none;
+                width: 100px;
+                height: 100px;
+                background-image: url('/images/Spinner.gif');
+                background-size: cover;
+            }
+            .table {
+                font-family: 'Roboto', sans-serif;
+                font-size: 10px;
+                line-height: 15px;
+                margin: auto;
+                text-align: center;
+                color: black;
+                }
+            .tableHeaderRow {
+                color: lightseagreen;
+                font-weight: bold;
+            }
+                
+        
+
+            
         }
     }
 }
-
-
-@media (max-width: 1024px) {
+@media (max-width: 899px) {
     
     .main{
         flex-direction: column;
@@ -138,9 +159,21 @@
     }
     
   }
-  
-  @media (min-width: 1025px)  {
+@media (min-width: 900px)  {
     .main{
         flex-direction: row;
     }
   }
+
+@media (max-width: 420px)   {
+    .picture{
+        
+        width: 320px;
+        height: 200px;
+    }
+    .content {
+        width: 320px;
+        height: 200px;
+      }
+
+}

@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  max-width: 1440px;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.unit .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.unit .main .picture {
+  width: 505px;
+  height: 330px;
+  background-image: url("/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_694.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.unit .main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 380px;
+  height: 250px;
+}
+
+.unit .main .content h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  color: #121212;
+}
+
+.unit .main .content p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.unit .main .content button {
+  width: 128px;
+  height: 48px;
+  background-color: #E4C1AE;
+  border: none;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.unit .main .content button:hover {
+  background-color: #F2E0C9;
+}
+
+.unit .modal-shadow {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #121212;
+  background-color: rgba(18, 18, 18, 0.5);
+}
+
+.unit .modal-shadow .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 25%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  opacity: 1;
+}
+
+.unit .modal-shadow .modal h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #121212;
+}
+
+.unit .modal-shadow .modal p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.unit .modal-shadow .modal .fa-x {
+  position: absolute;
+  top: 4vh;
+  right: 4vh;
+}
+
+.unit .modal-shadow .modal button {
+  display: none;
+  width: 128px;
+  height: 48px;
+  background-color: #E4C1AE;
+  border: none;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=main.css.map */

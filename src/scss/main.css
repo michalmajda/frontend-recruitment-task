@@ -164,7 +164,7 @@
   color: #FFFFFF;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 899px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -179,12 +179,23 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
   .main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media (max-width: 420px) {
+  .picture {
+    width: 320px;
+    height: 200px;
+  }
+  .content {
+    width: 320px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

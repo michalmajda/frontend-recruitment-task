@@ -129,7 +129,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 899px) {
     
     .main{
         flex-direction: column;
@@ -138,9 +138,22 @@
     }
     
   }
-  
-  @media (min-width: 1025px)  {
+@media (min-width: 900px)  {
     .main{
         flex-direction: row;
     }
   }
+
+@media (max-width: 420px)   {
+    .picture{
+        
+        width: 320px;
+        height: 200px;
+    }
+    .content {
+        width: 320px;
+        height: 200px;
+      }
+
+}
+  

@@ -48,13 +48,10 @@ const closePopup = e => {
 }
 }
 
-<<<<<<< HEAD
-=======
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(data => console.log(data));
 
->>>>>>> 3834fbb33bda54b913580de51dcdb2ea999ed62d
 
 
 mainBtn.addEventListener('click', countAndOpenPopup)
